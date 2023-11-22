@@ -6,13 +6,17 @@
 </head>
 <body>
 
-<div id="map" style = width:70%; height:400px; display: block; margin: auto;"></div>
+<div id="map" style=width:70%; height:400px;"></div>
 
-<script>
-var mapOptions = {
-    center: new naver.maps.LatLng(37.12668, 127.64366),
-    zoom: 10
-};
+var map = new naver.maps.Map('map'.{
+    center: new naver.maps.Map.LatLng(37.12668, 127.64366),
+    zoom: 15
+    });
+
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.12668, 127.64366),
+    map: map
+});
 
 </script>
 </body>
